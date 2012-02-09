@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title></title>
+    <link href="http://fonts.googleapis.com/css?family=Asul" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.6/js/dojo/dijit/themes/Nihilo/Nihilo.css">
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.6/js/esri/dijit/css/Popup.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script>
+      var dojoConfig = { 
+        parseOnLoad: true,
+        baseUrl : "./",
+        modulePaths : {"bearpanther" : "js"}
+      };
+    </script>
+    <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.6"></script>
+    <script src="js/app.js"></script>
+    
+    </script>
+  </head>
+  <body class="nihilo">
+    <div id="main-window" 
+         data-dojo-type="dijit.layout.BorderContainer" 
+         data-dojo-props="design:'headline',gutters:false"
+         style="width: 100%; height: 100%; margin: 0; visibility: hidden;">
+
+      <div id="map"
+           data-dojo-type="dijit.layout.ContentPane"
+           data-dojo-props="region:'center'">
+
+        <div id="controls" class="shadow">
+          <form id="loc-search">
+            <label for="loc-name">Where to?</label>
+            <input type="text" id="loc-name" />
+          </form>
+
+          <form id="tag-search">
+            <label for="tag-name">Search by Tag?</label>
+            <input type="text" id="tag-name" />
+          </form>
+
+          <div id="feedback">Press enter to search.</div>
+          
+          <div id="count"></div>
+          
+          <div id="basemaps_wrapper">
+            <div id="streets" class="basemap">Streets</div>
+            <div id="satellite" class="basemap">Satellite</div>
+            <div id="gray" class="basemap selected">Gray</div>
+          </div>
+        </div>
+
+        <!-- drop shadow divs -->
+        <div id="ds">
+          <div id="ds-t">
+            <div class="ds h1 o1"></div>
+            <div class="ds h2 o2"></div>
+            <div class="ds h3 o3"></div>
+            <div class="ds h4 o4"></div>
+            <div class="ds h5 o5"></div>
+          </div>
+          <div id="ds-b">
+            <div class="ds h1 o1"></div>
+            <div class="ds h2 o2"></div>
+            <div class="ds h3 o3"></div>
+            <div class="ds h4 o4"></div>
+            <div class="ds h5 o5"></div>
+          </div>
+        </div> <!-- end drop shadow divs -->
+
+        <div id="logo">
+          <a href="http://bearpanther.com/">
+            <img src="images/bp.png" />
+          </a>
+        </div>
+      </div>
+
+
+      <div id="footer" dojotype="dijit.layout.ContentPane" region="bottom" >
+        <div id="instructions">
+          Click the map...some photos from instagram might show up.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

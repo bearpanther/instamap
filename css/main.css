@@ -1,0 +1,165 @@
+html, body { 
+  height: 100%; width: 100%;
+  margin: 0; padding: 0;
+} 
+body{
+  background-color: #fff; overflow:hidden; 
+  font-family: "Asul", sans-serif;
+} 
+
+#footer {
+  margin: 0;
+  padding: 5px;
+  background-color: #fff; 
+  border-top: solid 1px #777;
+  height: 60px;
+}
+
+#main-window ::-webkit-scrollbar-track-piece {
+  background-color: #E5E5E5;
+  -webkit-border-radius: 11px;
+}
+
+/* use subtle scroll bars in webkit*/
+#main-window ::-webkit-scrollbar {
+  width: 12px;
+}
+
+#main-window ::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+#main-window ::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+
+#instructions {
+  padding: 10px 0 0 0;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.ds { background: #000; overflow: hidden; position: absolute; z-index: 2; }
+#ds-t div, #ds-b div { width: 100%; }
+#ds-b div { bottom: 0; }
+#ds .o1 { filter: alpha(opacity=10); opacity: .1; }
+#ds .o2 { filter: alpha(opacity=8); opacity: .08; }
+#ds .o3 { filter: alpha(opacity=6); opacity: .06; }
+#ds .o4 { filter: alpha(opacity=4); opacity: .04; }
+#ds .o5 { filter: alpha(opacity=2); opacity: .02; }
+#ds .h1 { height: 1px; }
+#ds .h2 { height: 2px; }
+#ds .h3 { height: 3px; }
+#ds .h4 { height: 4px; }
+#ds .h5 { height: 5px; }
+
+#map {
+  position: relative;
+}
+
+#controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 240px;
+  z-index: 50;
+  padding: 5px;
+  background: #fff;
+}
+
+label {
+  display: block;
+  font-size: 2em;
+  text-align: center;
+}
+
+input {
+  display: block;
+  font-size: 1em;
+  margin: 0 auto;
+  width: 180px;
+}
+
+#loc-search {
+  padding: 0 0 10px 0;
+}
+
+#feedback, #count {
+  color: #444;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 0 0 0;
+  width: 100%;
+}
+
+#feedback {
+  visibility: hidden;
+}
+
+#basemaps_wrapper {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 0 0 -120px; 
+  left: 50%;
+  border-top: 1px solid #ddd;
+}
+
+.basemap {
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px;
+  text-align: center;
+  width: 64px;
+}
+
+.selected {
+  background: #ddd;
+}
+
+#logo {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  z-index: 30;
+  bottom: 20px;
+  right: 20px;
+}
+
+.grammy { /* photo thumbnails in the popup */
+  display: block;
+  margin: 0 auto;
+}
+
+.esriPopup .titlePane { /* black out title bar text */
+  color: #444;
+}
+
+.esriPopup .contentPane {
+  text-align: center;
+}
+
+.photo {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  font-size: 0.8em;
+  padding: 5px 0 0 0;
+}
+
+.shadow {
+  -moz-box-shadow: 0 0 8px #888;
+  -webkit-box-shadow: 0 0 8px #888;
+  box-shadow: 0 0 8px #888;
+}
+
+.photo .caption {
+  padding: 0 0 5px 0;
+}
+
+.map-link {
+  cursor: pointer;
+}
+
