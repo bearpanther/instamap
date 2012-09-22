@@ -207,7 +207,7 @@ app = {
     content_pane = new dijit.layout.ContentPane({
         "content": "",
         "region": "bottom",
-				"style": "height: 240px; overflow-x: scroll; padding: 0;"
+				"style": "height: 245px; overflow-x: scroll; padding: 0;"
 	  }, content_pane_node);
     // insert markup for the photos into the content pane
     dojo.place(insta_content, content_pane_node);
